@@ -23,58 +23,44 @@ html {
 }
 
 .trump:before {
-	content: url(heart.jpg);
 	position: absolute;
 	top:0px;
 	right: 0px;
 }
 
 .trump:after {
-	content:url(heart.jpg);
+	
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
 }
 
-div.trump_mid {
-	position: absolute;
-	top: 30px;
-	left: 60px;
-}
-
-.trump_mid h1 {
-	font-weight: bold;
+h1 {
 	font-size: 45px;
 	line-height: 200px;
-
 }
 
-/*--くろばーーー*/
-
-.trump2 {
-	margin-top: 30px;
-	position: relative;
-	width:150px;
-	height: 200px;
-	border: 2px solid #ddd;
-	border-radius: 10px;
-	background-color: #fff;
-	text-align: center;
-
+/*--ハートーー*/
+.trump.heart:before,
+.trump.heart:after {
+	content: url(heart.jpg);
 }
 
 
-.trump2:before {
+/*--スペードーー*/
+.trump.spade:before,
+.trump.spade:after {
+	content: url(spade.gif);
+}
+
+/*--クロバーーー*/
+.trump.clover:before,
+.trump.clover:after {
 	content: url(clover.jpg);
-	position: absolute;
-	top:0px;
-	right: 0px;
 }
 
-.trump2:after {
-	content:url(heart.jpg);
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
+/*--*/
+.trump.diamond:before,
+.trump.diamond:after{
+	content: url(diamond.jpg);
 }
-

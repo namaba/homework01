@@ -3,22 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>trump</title>
+	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <?php
 define('TRUMP_RANK_MAX', 13);
-
-$suite = array('はーと','くらぶ','すぺーど','だいや');
-
-for ( $j = 0 ; $j < count($suite); $j++) {
-	for ($i = 0; $i < 13; $i++) {
-		$num = trump_rank($i + 1);
-		echo '<div class="trump"><h1></h1></div>'. $suite[$j] . $num . "\n"; 
-	}
-}
-
 function trump_rank ($num){
 	switch ($num){
 	case 1:
@@ -37,6 +28,20 @@ function trump_rank ($num){
 		return $num;
 	}
 }
+$suite = array('heart','clover','spade','diamond');?>
+
+<?php
+for ( $j = 0 ; $j < count($suite); $j++) :
+	for ($i = 0; $i < 13; $i++) :
+		$num = trump_rank($i + 1);
+	?>
+	<div class="trump <?php echo $suite[$j]; ?>">
+		<h1><?php echo $num; ?></h1>
+	</div>
+<?php
+	endfor;
+endfor;
+
 ?>
 <div id="container">
 	
