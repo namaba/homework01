@@ -10,7 +10,7 @@ html {
 }
 
 
-#trump {
+.trump {
 	margin-top: 30px;
 	position: relative;
 	width:150px;
@@ -18,20 +18,22 @@ html {
 	border: 2px solid #ddd;
 	border-radius: 10px;
 	background-color: #fff;
+	text-align: center;
+
 }
 
-div.trump_top:before {
+.trump:before {
 	content: url(heart.jpg);
 	position: absolute;
-	top:10px;
-	right: 5px;
+	top:0px;
+	right: 0px;
 }
 
-div.trump_bottom:after {
+.trump:after {
 	content:url(heart.jpg);
 	position: absolute;
-	bottom: 10px;
-	left: 5px;
+	bottom: 0px;
+	left: 0px;
 }
 
 div.trump_mid {
@@ -43,6 +45,36 @@ div.trump_mid {
 .trump_mid h1 {
 	font-weight: bold;
 	font-size: 45px;
+	line-height: 200px;
+
 }
 
+/*--くろばーーー*/
+
+.trump2 {
+	margin-top: 30px;
+	position: relative;
+	width:150px;
+	height: 200px;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	background-color: #fff;
+	text-align: center;
+
+}
+
+
+.trump2:before {
+	content: url(clover.jpg);
+	position: absolute;
+	top:0px;
+	right: 0px;
+}
+
+.trump2:after {
+	content:url(heart.jpg);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
 

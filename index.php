@@ -1,12 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>trump</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <?php
 define('TRUMP_RANK_MAX', 13);
 
 $suite = array('はーと','くらぶ','すぺーど','だいや');
 
-for ($j = count($suite); 0 <= $j; $j--) {
-	for ($i = TRUMP_RANK_MAX; $i >= 0; $i--) {
+for ( $j = 0 ; $j < count($suite); $j++) {
+	for ($i = 0; $i < 13; $i++) {
 		$num = trump_rank($i + 1);
-		echo $suite[$j] . $num . "\n";
+		echo '<div class="trump"><h1></h1></div>'. $suite[$j] . $num . "\n"; 
 	}
 }
 
@@ -28,3 +37,17 @@ function trump_rank ($num){
 		return $num;
 	}
 }
+?>
+<div id="container">
+	
+	<div class="trump">
+		<h1>
+			J
+		</h1>	
+	</div><!--trump-->
+
+</div><!--container-->
+
+
+</body>
+</html>
